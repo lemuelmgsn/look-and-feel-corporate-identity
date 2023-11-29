@@ -7,14 +7,208 @@
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-    <nav>
+
+    <nav class="topnav">
+        <img src="assets/logo_spatwater v2.png" class="Logo"></img>
         <ul>
-            <li>Home</li>
-            <li>Waarom?</li>
-            <li>Waarom b-RAIN?</li>
-            <li>Hoe doe je mee?</li>
-        </ul>
-    </nav>
+            <li><a href="#Contact">Contact</a></li>
+            <li><a href="#Over">Over</a></li>
+            <li><a href="#app">b-RAIN app</a></li>
+            <li><a href="#Waarom">Waarom b-RAIN?</a></li>
+            <li><a href="#wat">Wat is b-RAIN?</a></li>
+            <li><a href="#Home">Home</a></li>
+        </ul>  
+   </nav>
+
+
+<main>
+    <!-- test javascript slider -->
+    <section class="test-java">
+
+
+        <div class="imagechange">
+            <img src="assets/b-RAIN landing page v3 1 (Gemiddeld).png" id="imgchange" class="landingpage">
+            <div class="overlay-text">Wees slim met ons water <br> <span>be b-RAIN!</span><br>
+            <button class="contact-button"><a href="#Contact" class="contact-link">Contact ons!</a></button>
+            </div>
+        </div>
     
+        <div class="slidecontainer">
+            <input type="range" min="1" max="100" value="1" class="slider-range" id="myRange">
+            <ul class="range-number">
+
+                <li class="li-test">1</li>
+                <li class="li-test">2</li>
+                <li class="li-test">3</li>
+                <li class="li-test">4</li>
+                <li class="li-test">5</li>
+
+            </ul>
+            <p class="p-value">Value : <span id="rangevalue"></span></p>
+        </div>
+    
+    
+    <!-- javascript voor slider -->
+        <script>
+            let rangevalue = document.getElementById("myRange");
+            let setvalue = document.getElementById("rangevalue");
+            let imgchangevalue = document.getElementById("imgchange")
+                //setvalue.innerHTML = rangevalue.value;
+                //console.log(rangevalue.value)
+    
+            //Now will use oninput event.
+            rangevalue.oninput = function() {
+                let getvalue = rangevalue.value;
+                setvalue.innerHTML = this.value;
+                if (getvalue > 0 && getvalue < 26) {
+                    imgchangevalue.setAttribute("src", "assets/b-RAIN landing page v3 1 (Gemiddeld).png")
+                } else if (getvalue >= 27 && getvalue <= 49) {
+                    imgchangevalue.setAttribute("src", "assets/b-RAIN landing page v3 2 (Gemiddeld).png")
+                } else if (getvalue >= 50 && getvalue <= 73) {
+                    imgchangevalue.setAttribute("src", "assets/b-RAIN landing page v3 3 (Gemiddeld).png")
+                } else if (getvalue >= 74 && getvalue <= 97) {
+                    imgchangevalue.setAttribute("src", "assets/b-RAIN landing page v3 4 (Gemiddeld).png")
+                } else if (getvalue >= 98 && getvalue <= 99) {
+                    imgchangevalue.setAttribute("src", "assets/b-RAIN landing page v3 5 (Gemiddeld).png")
+                }
+            }
+        </script>
+
+    </section>
+
+   
+
+<!-- end test javascript slider -->
+
+    <section class="welkom" id="Home">
+        <h2 class="kopjes">Welkom bij b-RAIN <br> de toekomst van ons water!</h2>
+        <p>
+            Klimaatverandering zorgt voor meer droogte en wateroverlast door intense buien 
+            Ons riool kan al dat water bij een bui vaak niet aan, en zorgt voor wateroverlast en vervuild rioolwater in ons toch al kwetsbare oppervlaktewater 
+            Het is tijd om massaal ons regenwater vast te houden en her te gebruiken. 
+            Nederland heeft ongeveer 15 miljoen regenpijpen.  
+            Als je een (kleine) regenton installeert van 100 liter, en je leegt een volle ton tien keer in een jaar in je tuin of op je bedrijventerrein... 
+            Dan ontlasten we ons riool met 1.5 miljard liter water per jaar 
+            Maar hoe zorg je ervoor dat dit gebeurt zonder dat je zelf elke keer de kraan van je regenwateropslag open hoeft te zetten? 
+            Het is tijd om slim met ons water om te gaan: be b-RAIN! 
+        </p>
+    </section>
+
+    <section id="wat">
+        <h2 class="kopjes">Wat is b-RAIN?</h2>
+        <img src="assets/wat is b-rain foto.jpg" class="wat-brain-foto">
+            <div class="test-read">
+                <div class="card">
+                    <input id="ch" type="checkbox">
+                        <p>b-RAIN is de manier om zo optimaal mogelijk om te gaan met de neerslag rondom je huis. Met slimme technologie, gebaseerd op weersvoorspellingen, regelt ons product automatisch 
+                        de hoeveelheid water in de regenton, zodat je altijd het meeste uit je waterreservoir haalt zonder er tijd aan kwijt te zijn. 
+                        </p>
+                         <div class="content">
+                            <p>Als de regenton vol zit en er is een hevige bui voorspeld, dan leegt de ton zich automatisch om de piekbui op te vangen. Als er droogte voorspeld is, houdt de regenton zoveel mogelijk water vast. Dit water kan je op een optimaal moment inzetten, zoals het beregenen van groen of het wassen van je auto.
+                                 De b-RAIN app communiceert met onze slimme kraan en geeft je inzicht in hoeveel water er al bespaard is, wat de neerslagverwachting is en wanneer je je tuin het beste water kan geven.
+                            </p>
+                           <label for="ch">Lees minder</label>
+                         </div>
+                  <label for="ch">Lees meer</label>
+                </div>
+            </div>
+
+    </section>
+
+
+        <!-- Waarom b-RAIN? -->
+
+    <section id="Waarom" class="waarom">
+        <h2 class="kopjes">Waarom b-RAIN?</h2>
+        <p>
+           text
+        </p>
+        <img src="assets/regenton.voordelen.png" id="regenton-voordelen">
+    </section>
+
+
+            <!-- De b-RAIN app -->
+
+    <section id="app" class="brain-app">
+
+            <h2 class="kopjes">De b-RAIN app</h2>
+            <p>
+                Met behulp van de gratis Brain-app heeft u ieder moment van de dag inzicht in uw wateropslag. Op deze manier krijgt u inzicht in de hoeveelheid water die u beschikbaar heeft, hoeveel u bespaard heeft maar ook wat de verwachtte wateropslag is voor de komende zeven dagen. Daarnaast kunt u via de app het kraantje ook zelf bedienen.  
+                <br/>
+                <br/>
+                Doordat de b-RAIN app gekoppeld is aan verwachte weersvoorspellingen hoeft u zich ook geen zorgen te maken als het buiten gaat vriezen. Bij langdurige lage temperaturen zal de regenton zichzelf automatisch legen zodat er geen schade ontstaat aan de ton.
+            </p>
+            <img src="assets/b-RAIN mobiele app.png" class="app">
+            
+
+    </section>
+
+
+        <!-- Over b-RAIN -->
+
+    <section id="Over" class="over">
+        <h2 class="kopjes">Over b-RAIN</h2>
+           <h3>b-RAIN is ontwikkeld door Spatwater</h3>
+           <p>
+           SPATwater bestaat uit een nieuwe generatie enthousiaste hydrologen die met een technische achtergrond nét wat anders kijken naar ruimtelijke opgaven. De uitdagingen zijn enorm, maar de kansen die het biedt nog groter. 
+           <br/>
+           <br/>
+           <a href="https://www.spatwater.nl/">klik hier om naar Spatwater te gaan!</a>
+           </p>
+    </section>
+
+
+        <!-- Contact -->
+
+    <section id="Contact" class="contact">
+        <h2 class="kopjes">Contact</h2>
+        <p>
+            Wij houden van korte lijntjes, jij toch ook? Kom met ons in gesprek om de mogelijkheden van b-RAIN te bespreken door een mail te sturen naar <a href="mailto:gebruikersnaam@emailadres.nl,naam@provider.nl,info@b-rain.nl">info@b-rain.nl</a>
+        </p>
+
+        <form>
+            <fieldset>
+                <label for="Naam">Naam</label>
+                <input type="text" name="name" placeholder="uw naam..">
+
+                <label for="email">e-mail</label>
+                <input type="email" name="email" placeholder="uw e-mail"
+
+                
+
+                <label for="Bericht">Bericht</label>
+                <textarea id="bericht" name="bericht" placeholder="Write something.." style="height:200px"></textarea>
+
+
+
+
+            </fieldset>
+
+
+
+        </form>
+
+
+
+
+
+
+
+
+
+
+
+
+    </section>
+
+
+
+
+
+
+
+</main>
+
+
 </body>
 </html>
