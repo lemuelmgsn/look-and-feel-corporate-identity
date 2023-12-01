@@ -159,13 +159,11 @@ section{
 
 
 /* de b-rain app */
-
 .brain-app p{
 float: left;
 padding-top: 60px;
 padding-left: 90px;
 margin-left: 150px;
-
 }
 .app{
     padding-top: 20px;
@@ -174,6 +172,7 @@ margin-left: 150px;
     width: 300px;
     margin-right: 200px;
 }
+/* end  */
 
 
 /* Landpagina overlay foto */
@@ -184,7 +183,6 @@ margin-left: 150px;
     width: 100vh;
     height: 500px; 
 }*/
-
 .image-container img {
     object-fit: cover;
     display: block;
@@ -205,6 +203,7 @@ margin-left: 150px;
     font-size: 36px; 
     text-align: center;
 }
+/* end  */
 
 
 
@@ -262,17 +261,23 @@ label{
     border-radius: 5px;
     margin-top: 12px;
 }
+label:hover{
+    color: var(--button-font-hover);
+    background-color: var(--button-color-hover);
+}
+/* end */
 
-
+/* wat is b-rain? foto */
 .wat-brain-foto{
     float: left;
     border-radius: 30px;
     height: 400px;
     margin-left: 80px;
 }
+/* end */
+
 
 /* Waarom b-RAIN? regenton foto*/
-
 .regenton-voordelen{
     float: right;
 }
@@ -281,14 +286,14 @@ label{
     position: absolute;
     left: -100vw;
 }
+/* end */
 
 
-/* test */
+/* javascript voor slider landing page */
 
 .image-change{
     margin:auto;
 }
-
 .img-test{
     max-width: 100%;
     border-radius: 5px;
@@ -298,11 +303,9 @@ label{
     padding: 0px;
     margin: 0px;
 }
-
 .slider-range {
     width: 25%;
 }
-
 .range-number {
     text-align: center;
     width: 100%;
@@ -312,7 +315,7 @@ label{
     padding: 0 3px;
     margin-bottom: 15px;
 }
-.test-java{
+.java-slider{
     padding: 0px;
     margin: 0px;
 }
@@ -326,15 +329,5 @@ label{
 #rangevalue{
     color: white;
 }
-.contact-button{
-    background-color: var(--button-font-3);
-    color: black ;
-    margin-top: 10px;
-    padding: 10px 10px;
-    border-radius: 20px;
-}
-.contact-link{
-    text-decoration: none;
-    color: black;
-}
+/* end */
 
