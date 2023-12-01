@@ -23,6 +23,10 @@
 
     --button-color-3: #006319;
     --button-font-3: #FFFFFE;
+
+    /* --------fonts----------- */
+    --body-font: 'Open Sans', sans-serif;
+    --title-font: 'Raleway', sans-serif;
 }
 
 html{
@@ -51,7 +55,7 @@ ul{
     z-index: 1;
 }
 .topnav a{
-    font-family: sans-serif;
+    font-family:var(--body-font);
     float: right;
     color: var(--font-color-titles);
     text-align: center;
@@ -106,8 +110,8 @@ span{
 }
 .kopjes{
     text-align: center;
-    font-family: sans-serif;
-    color: var(--font-color-titles)
+    font-family: var(--title-font);
+    color: var(--font-color-titles);
 }
 header{
     display: flex;
@@ -128,7 +132,7 @@ section h3{
 }
 section p{
     color: var(--font-color);
-    font-family: sans-serif;
+    font-family: var(--body-font);
     font-size: 18px;
     line-height: 1.4;
     width: 30em;
@@ -191,7 +195,7 @@ margin-left: 150px;
     border-radius: 10px;
 }
   .overlay-text{
-    font-family: sans-serif;
+    font-family: var(--title-font);
     font-weight: 700;
     position: absolute;
     top: 25%; 
@@ -220,7 +224,7 @@ margin-left: 150px;
     padding: 0;
     box-sizing: border-box;
     background-color: var(--background-color);
-    font-family: sans-serif;
+    font-family: var(--body-font);
     display: flex;
     justify-content: end;
     padding-right: 20px;
