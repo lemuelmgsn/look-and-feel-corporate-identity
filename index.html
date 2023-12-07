@@ -28,7 +28,7 @@
 
         <div class="imagechange">
             <img src="assets/b-RAIN landing page v3 1 (Gemiddeld).png" id="imgchange" class="landingpage">
-            <div class="overlay-text">Wees slim met ons water <br> <span>be b-RAIN!</span><br>
+            <div class="overlay-text">Wees slim met ons water <br> <div class = "span-fake">be b-RAIN!</div><br>
             </div>
         </div>
     
@@ -48,7 +48,7 @@
     
     
     <!-- javascript voor slider -->
-        <script>
+           <script>
             let rangevalue = document.getElementById("myRange");
             let setvalue = document.getElementById("rangevalue");
             let imgchangevalue = document.getElementById("imgchange")
@@ -95,24 +95,32 @@
 
 <!-- wat is b-rain? section -->
 
+
+
     <section id="wat">
         <h2 class="kopjes">Wat is b-RAIN?</h2>
-        <img src="assets/wat is b-rain foto.jpg" class="wat-brain-foto">
+        <div class="wat-grid">
             <div class="test-read">
-                <div class="card">
-                    <input id="ch" type="checkbox">
-                        <p class="card-p">b-RAIN is de manier om zo optimaal mogelijk om te gaan met de neerslag rondom je huis. Met slimme technologie, gebaseerd op weersvoorspellingen, regelt ons product automatisch 
-                        de hoeveelheid water in de regenton, zodat je altijd het meeste uit je waterreservoir haalt zonder er tijd aan kwijt te zijn. 
+                        <p>
+                        b-RAIN is de manier om zo optimaal mogelijk om te gaan met de neerslag rondom je huis. Met slimme technologie, gebaseerd op weersvoorspellingen, regelt ons product automatisch 
+                        de hoeveelheid water in de regenton, zodat je altijd het meeste uit je waterreservoir haalt zonder er tijd aan kwijt te zijn. <span> Als de regenton vol zit en er is een hevige bui voorspeld, dan leegt de ton zich automatisch om de piekbui op te vangen. Als er droogte voorspeld is, houdt de regenton zoveel mogelijk water vast. Dit water kan je op een optimaal moment inzetten, zoals het beregenen van groen of het wassen van je auto.
+                        De b-RAIN app communiceert met onze slimme kraan en geeft je inzicht in hoeveel water er al bespaard is, wat de neerslagverwachting is en wanneer je je tuin het beste water kan geven.</span>
+                        <br> <button>Lees meer</button>
                         </p>
-                         <div class="content">
-                            <p class="card-p">Als de regenton vol zit en er is een hevige bui voorspeld, dan leegt de ton zich automatisch om de piekbui op te vangen. Als er droogte voorspeld is, houdt de regenton zoveel mogelijk water vast. Dit water kan je op een optimaal moment inzetten, zoals het beregenen van groen of het wassen van je auto.
-                                 De b-RAIN app communiceert met onze slimme kraan en geeft je inzicht in hoeveel water er al bespaard is, wat de neerslagverwachting is en wanneer je je tuin het beste water kan geven.
-                            </p>
-                           <label for="ch">Lees minder</label>
-                         </div>
-                  <label for="ch">Lees meer</label>
-                </div>
             </div>
+            <img src="assets/wat is b-rain foto.jpg" class="wat-brain-foto">
+        </div>
+
+            <script>
+                var button = document.querySelector("button");
+                var element = document.querySelector("span");
+
+                button.addEventListener("click", function() {
+                element.classList.toggle("show");
+                });
+            
+            </script> 
+
     </section>
 
         <!-- Waarom b-RAIN? section -->
@@ -177,17 +185,6 @@
 
             </fieldset>
         </form>
-
-
-
-
-
-
-
-
-
-
-
 
     </section>
 

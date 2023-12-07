@@ -59,7 +59,8 @@ ul{
     float: right;
     color: var(--font-color-titles);
     text-align: center;
-    padding: 20px;
+    padding-right: 25px;
+    margin-top: 30px;
     text-decoration: none;
     font-size: 20px;
 }
@@ -73,27 +74,10 @@ ul{
     font-family: sans-serif;
     color: var(--font-color-titles);
     display: inline;  
-    padding: 15px 20px;  
     width: 130px;
     height: 60px;
     margin-left: 30px;
-}
-.center{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    height: 400px;
-}
-.email{
-    color: cadetblue;
-    font-family: sans-serif;
-    text-align: center;
-    font-size: 17px;
-
-}
-form{
-    text-align: center;
+    margin-top: 10px;
 }
 .motto{
     width: 12em;
@@ -103,7 +87,7 @@ form{
     font-family: sans-serif;
     color: rgb(59, 59, 59);
 }
-span{
+.span-fake{
     color: #71b0c8;
     background-color: transparent;
     border-radius: 5px;
@@ -112,12 +96,6 @@ span{
     text-align: center;
     font-family: var(--title-font);
     color: var(--font-color-titles);
-}
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px 30px;
 }
 section h2{
     font-size: 30px;
@@ -209,74 +187,51 @@ margin-left: 150px;
 }
 /* end  */
 
+/* display bij wat is brain? */
+.wat-grid{
+    display: inline-flex;
+}   
 
 
-/* Lees meer button/checkbox bij "Wat is b-RAIN?" */
+/* Lees meer button bij "Wat is b-RAIN?" */
 
-.ul-test{
-    display: flex;
-    overflow: scroll;
-    overscroll-behavior: contain auto;
-    scroll-snap-align: center;
-}
 .test-read {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
     background-color: var(--background-color);
     font-family: var(--body-font);
-    display: flex;
-    justify-content: end;
-    padding-right: 20px;
-    padding-top: 50px;
+    padding: 1em;
+    margin-bottom: 0;
+    margin-top: 4em;
 }
-.card{
-    background-color: #f5f5f5;
-    padding: 22px 40px;
-    margin-right: 80px;
+button{
+    padding: 1em;
+    margin-top: 0;
+    background-color: var(--button-color-3);
+    color: var(--button-font-3);
     border-radius: 10px;
-    line-height: 1.4;
-    text-align: left;
+    
 }
-.card p{
-    width: 30em;
-    padding-top: 20px;
-}
-#ch{
-    display: none;
-}
-#ch:checked ~ .content {
-    display: block;
-}
-#ch:checked ~ label{
-    display: none;
-}
-.content{
-    display: none;
-}
-label{
-    display: inline-block;
-    cursor: pointer;
-    color: #fff;
-    /* background-color: #4ECD5D; */
-    /* background-color: #106300; */
-    background-color: #006319;
-    padding: 3px 13px;
-    border-radius: 5px;
-    margin-top: 12px;
-}
-label:hover{
-    color: var(--button-font-hover);
+button:hover{
     background-color: var(--button-color-hover);
+    color:var(--button-font-hover);
 }
+span{
+    display: none;
+}
+span.show{
+    display: inline;
+}
+
 /* end */
+
+
+
 
 /* wat is b-rain? foto */
 .wat-brain-foto{
-    float: left;
     border-radius: 30px;
     height: 400px;
-    margin-left: 80px;
+    grid-area: wbf;  
 }
 /* end */
 
@@ -328,10 +283,10 @@ label:hover{
     margin-top: 0;
 }
 .p-value{
-    color: white;
+    display: none;
 }
 #rangevalue{
-    color: white;
+    display: none;
 }
 /* end */
 
